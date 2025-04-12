@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienfait Energies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bienf.js"></script>
+</head>
+<script src="bienf.js"></script>
+
+<body>
+    <div class="header">
+        <img class="logo" src="logo.jpeg" alt="Logo">
+        <h1>Bienfait Energies</h1>
+    </div>
+    
+
+
+    <div class="intro" id="intro">
+        <!-- L'introduction sera remplie progressivement par JavaScript -->
+    </div>
+
+
+
+
+
+    <div id="navigation-buttons">
+        <button onclick="scrollToSection('chauffage')">Chauffage</button>
+        <button onclick="scrollToSection('adoucisseur')">Adoucisseur</button>
+        <button onclick="scrollToSection('electricite')">Électricité</button>
+        <button onclick="scrollToSection('ventilation')">Ventilation</button>
+        <button onclick="scrollToSection('climatisation')">Climatisation</button>
+        <button onclick="scrollToSection('maintenance')">Maintenance</button>
+    </div>
+    
+    <!-- Conteneur séparé pour le bouton "Panneaux Solaires" -->
+    <div id="single-button">
+        <button onclick="scrollToSection('panneaux-solaires')">Panneaux Solaires</button>
+    </div>
+    
+    
+    <section id="chauffage" class="chauffage-section">
+        <div class="text-container">
+            <h2 class="title">Chauffage</h2>
+            <h3 class="subtitle">Solutions modernes</h3>
+            <p class="description">
+                Découvrez des systèmes de chauffage modernes et économiques adaptés à vos besoins. 
+                Profitez d’une technologie fiable et performante pour votre confort quotidien. Que vous
+                soyez à la recherche d'une solution pour un nouveau projet ou pour remplacer un système
+                existant, nous vous offrons des options personnalisées, durables et éco-responsables. 
+                Nous sommes là pour vous guider dans vos choix et vous garantir une installation
+                optimale, répondant à vos attentes en termes de confort et d'efficacité énergétique. 
+                Avec Bienfait Energies, faites le choix de la qualité et de la tranquillité d'esprit
+                pour les années à venir.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="cof.jpg" alt="Image Chauffage">
+        </div>
+    </section>
+    
+    
+    <section id="adoucisseur" class="adoucisseur-section">
+        <div class="content-wrapper">
+            <div class="text-container">
+                <h2 class="title">Adoucisseurs sans sel : une solution écologique contre le calcaire</h2>
+                <p class="description">
+                    Les adoucisseurs sans sel sont une alternative innovante et écologique pour lutter contre le calcaire dans vos installations 
+                    et préservent les minéraux essentiels de l'eau. 
+                    Idéal pour protéger vos équipements ménagers et améliorer la qualité de l'eau.
+                    Faites le choix d'une eau plus douce.
+                </p>
+            </div>
+            <div class="images-container">
+                <img src="adou.jpeg" alt="Adoucisseur 3" class="image">
+                <img src="ad.jpeg" alt="Adoucisseur 1" class="image">
+                <img src="ado.jpeg" alt="Adoucisseur 2" class="image">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <section id="electricite" class="electricite-section">
+        <div class="content-wrapper">
+            <!-- Texte -->
+            <div class="text-container">
+                <h2 class="title">Électricité</h2>
+                <h3 class="subtitle">Installations sécurisées</h3>
+                <p class="description">
+                    Bienfait Energies propose des installations électriques conformes et sécurisées, adaptées à vos projets résidentiels ou professionnels. 
+                    Nous mettons un point d'honneur à assurer la fiabilité et la sécurité de vos circuits électriques, tout en optimisant votre consommation énergétique.
+                    Nous fournissons des solutions modernes qui répondent à toutes vos exigences.
+                </p>
+            </div>
+            
+            <!-- Images en dessous du texte -->
+            <div class="images-container">
+                <img src="ele.jpeg" alt="Image Électricité gauche" class="image">
+                <img src="elec.jpeg" alt="Image Électricité droite" class="image">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <section id="ventilation" class="ventilation-section">
+        <div class="content-wrapper">
+            <!-- Texte -->
+            <div class="text-container">
+                <h2 class="title">Ventilation</h2>
+                <h3 class="subtitle">Confort et qualité d'air</h3>
+                <p class="description">
+                    Respirez un air sain grâce à nos solutions de ventilation performantes. 
+                    Maintenez une qualité de l’air optimale dans votre habitat. Bienfait Energies garantit un renouvellement d’air efficace et économique.
+                </p>
+            </div>
+            
+            <!-- Images en dessous du texte -->
+            <div class="images-container">
+                <img src="ven.jpeg" alt="Ventilation gauche" class="image">
+                <img src="vent.jpeg" alt="Ventilation droite" class="image">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="climatisation" class="climatisation-section">
+        <div class="content-wrapper">
+            <!-- Texte -->
+            <div class="text-container">
+                <h2 class="title">Climatisation</h2>
+                <h3 class="subtitle">Confort en toutes saisons</h3>
+                <p class="description">
+                    Profitez d’un confort optimal en été comme en hiver grâce à nos solutions de climatisation. 
+                    Bienfait Energies vous accompagne pour installer un système performant, silencieux et éco-responsable, 
+                    parfaitement adapté à vos besoins et à votre espace.
+                </p>
+            </div>
+            
+            <!-- Image en dessous du texte -->
+            <div class="image-container">
+                <img src="clim.jpeg" alt="Climatisation" class="image">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="maintenance" class="maintenance-section">
+        <div class="content-wrapper">
+            <!-- Texte principal -->
+            <div class="text-container">
+                <h2 class="title">Maintenance après installation</h2>
+                <h3 class="subtitle">Service réactif</h3>
+                <p class="description">
+                    Bienfait Energies s'engage à intervenir rapidement pour résoudre vos problèmes techniques
+                    et assurer une réparation efficace.
+                </p>
+                <h3 class="subtitle">Entretien régulier</h3>
+                <p class="description">
+                    Prolongez la durée de vie de vos équipements grâce à notre service d’entretien régulier. 
+                    Nous vérifions vos installations pour garantir leur fonctionnement optimal et prévenir les pannes futures.
+                </p>
+            </div>
+            
+            <!-- Image en dessous du texte -->
+            <div class="image-container">
+                <img src="mane.jpeg" alt="Maintenance après dépannage" class="image">
+            </div>
+        </div>
+    </section>
+    
+
+    
+    
+    <section id="panneaux-solaires" style="max-width: 1000px; margin: 20px auto; background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; display: flex; flex-direction: column; align-items: center; text-align: center; color: white;">
+        <!-- Texte explicatif -->
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h2 style="color: orange; font-family: 'Courier New', Courier, monospace;">Installation de panneaux solaires</h2>
+            <p>
+                Chez Bienfait Energies, nous proposons des solutions adaptées pour installer des panneaux solaires
+                afin de réduire vos factures d'énergie et contribuer à un avenir durable. Nos experts vous accompagnent
+                dans le choix et l'installation des équipements les plus performants pour votre domicile.
+            </p>
+            <p>
+                Grâce à notre calculette, estimez facilement la rentabilité de vos panneaux solaires ! Choisissez la puissance 
+                des panneaux, indiquez votre tarif du kWh, et découvrez vos économies ainsi que votre impact positif 
+                sur l’environnement en termes de réduction de CO₂.
+            </p>
+        </div>
+    
+        <!-- Conteneur principal -->
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+            <!-- Image à gauche -->
+            <img src="pano.jpeg" alt="Image de panneaux solaires à gauche" 
+                 style="width: 45%; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+    
+            <!-- Image à droite -->
+            <img src="panl.jpeg" alt="Image de panneaux solaires à droite" 
+                 style="width: 45%; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+        </div>
+    
+        <!-- Calculette au centre -->
+        <div id="solar-calculator" style="background-color: black; color: white; padding: 20px; border-radius: 10px; text-align: center; width: 100%; margin: auto;">
+            <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px; gap: 10px;">
+                <img src="https://www.pinclipart.com/picdir/middle/74-743387_attention-panneau-de-signalisation-attention-clipart.png" alt="Attention" style="width: 30px; height: auto;">
+                <h3 style="color: orange; margin: 0;">ESTIMATION !!</h3>
+            </div>
+    
+            <h3>Calculette de rentabilité</h3>
+            <form id="calculator-form" style="display: flex; flex-direction: column; gap: 10px;">
+                <label for="panel-type">Type de panneau :</label>
+                <select id="panel-type" style="padding: 5px;">
+                    <option value="435">435W</option>
+                </select>
+    
+                <label for="panel-count">Nombre de panneaux :</label>
+                <input type="number" id="panel-count" value="1" min="1" style="padding: 5px;">
+    
+                <label for="price-kwh">Prix du kWh (€) :</label>
+                <input type="number" id="price-kwh" value="0.17" min="0" step="0.01" style="padding: 5px;">
+    
+                <label for="period">Période :</label>
+                <select id="period" style="padding: 5px;">
+                    <option value="day">Jour</option>
+                    <option value="week">Semaine</option>
+                    <option value="month">Mois</option>
+                </select>
+    
+                <label for="season">Saison :</label>
+                <select id="season" style="padding: 5px;">
+                    <option value="summer">Été</option>
+                    <option value="winter">Hiver</option>
+                    <option value="spring">Printemps</option>
+                    <option value="autumn">Automne</option>
+                </select>
+    
+                <button type="button" onclick="calculateProfit()" style="padding: 10px; background-color: orange; color: black; border: none; border-radius: 5px; cursor: pointer;">Calculer</button>
+            </form>
+    
+            <div id="result" style="margin-top: 20px; text-align: left; color: white;"></div>
+        </div>
+    </section>
+    
+        
+    
+    <script>
+        function calculateProfit() {
+            const panelType = parseInt(document.getElementById('panel-type').value);
+            const panelCount = parseInt(document.getElementById('panel-count').value);
+            const priceKwh = parseFloat(document.getElementById('price-kwh').value);
+            const period = document.getElementById('period').value;
+            const season = document.getElementById('season').value;
+    
+            if (isNaN(priceKwh) || priceKwh <= 0 || isNaN(panelCount) || panelCount <= 0) {
+                document.getElementById('result').innerHTML = "Veuillez entrer des valeurs valides.";
+                return;
+            }
+    
+            // Rendement des panneaux par saison (heures de production par jour)
+            const seasonEfficiency = {
+                summer: 6,
+                winter: 2,
+                spring: 4,
+                autumn: 3
+            };
+    
+            // Multiplicateur pour les périodes
+            const periodMultiplier = {
+                day: 1,
+                week: 7,
+                month: 30
+            };
+    
+            const hoursPerDay = seasonEfficiency[season];
+            const totalPower = panelType * panelCount * hoursPerDay; // Puissance totale en Wh/jour
+            const savings = (totalPower / 1000) * priceKwh * periodMultiplier[period]; // Économies en €
+            const co2Saved = (totalPower / 1000) * periodMultiplier[period] * 0.5; // Réduction CO2 (kg)
+    
+            // Résultats
+            document.getElementById('result').innerHTML = `
+                <p>Économies estimées : <strong style="color: orange;">${savings.toFixed(2)} €</strong></p>
+                <p>Réduction de CO₂ : <strong style="color: orange;">${co2Saved.toFixed(2)} kg</strong></p>
+            `;
+        }
+    </script>
+
+    
+    
+    
+    
+
+<div class="contact">
+    <h2>Contactez-nous</h2>
+    <div class="contact-icons">
+        <div class="contact-item">
+            <a href="tel:+0486804407" target="_blank">
+                <img src="https://img.freepik.com/premium-vector/phone-call-icon-vector-illustration-design-telephone_373520-4523.jpg?w=1380" alt="Téléphone">
+            </a>
+            <p>0486804407</p>
+        </div>
+        <div class="contact-item">
+            <a href="mailto:bienfaitenergies@gmail.com" target="_blank">
+                <img src="https://logos-download.com/wp-content/uploads/2016/05/Gmail_logo_icon-700x531.png" alt="Mail">
+            </a>
+            <p>bienfaitenergies@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.instagram.com/bienfait_energies" target="_blank">
+                <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-icon-png-full-colour.png" alt="Instagram">
+            </a>
+            <p>Bienfait_energies</p>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.facebook.com/bienfait Énergies" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2016/11/06/09/54/facebook-1802605__480.png" alt="Facebook">
+            </a>
+            <p>Bienfait Énergies</p>
+        </div>
+    </div>
+</div>
+
+<footer style="display: flex; align-items: center; justify-content: center; gap: 10px; color: white;">
+    <img src="logo.jpeg" alt="Logo" style="width: 50px; height: auto; border-radius: 5px;">
+    <span>&copy; 2024 Kévin Bienfait</span>
+</footer>
+
+    
+    </div>
+    <script>
+        const introText = "Bienvenue sur le site de Bienfait Energies, votre partenaire pour des solutions durables et innovantes. Que ce soit pour votre confort thermique, la production d'énergie solaire, ou l'amélioration de la qualité de l'air, nous sommes là pour vous accompagner.";
+
+        const introElement = document.getElementById('intro');
+        let index = 0;
+
+        function typeWriter() {
+            if (index < introText.length) {
+                introElement.textContent += introText.charAt(index);
+                index++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
+        <script>
+            // Fonction pour naviguer vers une section spécifique
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        </script>
+</body>
+</html>

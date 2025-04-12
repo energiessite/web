@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    overflow-x: hidden; /* Désactive le défilement horizontal */
 }
 
 /* En-tête */
@@ -107,6 +108,7 @@ h1 {
     width: 100%;
     max-width: 800px;
     margin: 20px auto;
+    overflow: hidden; /* Empêche le défilement sur les éléments de type grille */
 }
 
 #navigation-buttons button {
@@ -179,6 +181,8 @@ section {
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
+    width: 100%;
+    overflow: hidden; /* Empêche le défilement sur les éléments de type image */
 }
 
 .image {
@@ -290,3 +294,4 @@ section img {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+

@@ -1,0 +1,292 @@
+/* Corps de la page */
+body {
+    background-color: #5c5c5c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police plus moderne */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* En-tête */
+.header {
+    display: flex;
+    align-items: center;   /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    padding: 20px;
+    background-color: #111;
+    width: 100%;
+    box-sizing: border-box; /* Pour éviter les marges ou padding indésirables */
+}
+
+/* Logo */
+.logo {
+    width: 60px; /* Augmente la taille du logo */
+    height: 60px;
+    border-radius: 50%;
+    animation: logoBounce 2s infinite alternate;
+    margin-right: 15px; /* Espacement entre le logo et le titre */
+}
+
+/* Animation pour faire balancer le logo */
+@keyframes logoBounce {
+    0% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+/* Titre */
+h1 {
+    font-size: 40px; /* Titre plus grand */
+    color: white;
+    margin: 0; /* Supprime l'espacement autour du titre */
+    letter-spacing: 2px; /* Espacement entre les lettres pour un effet plus moderne */
+    font-weight: 600; /* Poids de la police plus marqué */
+}
+
+/* Responsivité pour les petits écrans (téléphones) */
+@media screen and (max-width: 768px) {
+    /* En-tête : réduire l'espacement et aligner */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px; /* Réduit la taille du titre sur les petits écrans */
+        letter-spacing: 1px; /* Espacement réduit pour les petits écrans */
+    }
+
+    .logo {
+        width: 50px; /* Taille du logo sur téléphone */
+        height: 50px;
+        margin-right: 0;
+    }
+
+    /* Section d'introduction */
+    .intro {
+        font-size: 16px; /* Ajuste la taille de police dans l'introduction */
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    /* Grille de boutons */
+    #navigation-buttons {
+        grid-template-columns: repeat(2, 1fr); /* Deux boutons par ligne sur mobile */
+    }
+
+    /* Boutons de la calculette panneau solaire */
+    #solar-calculator button {
+        font-size: 12px;
+        padding: 8px 14px;
+        width: 130px; /* Ajuste la largeur des boutons */
+    }
+}
+
+/* Section d'introduction */
+.intro {
+    background-color: rgba(236, 236, 236, 0.1);
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Boutons de navigation */
+#navigation-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#navigation-buttons button {
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 8px 16px; /* Taille des boutons ajustée */
+    font-size: 14px; /* Taille uniforme des boutons */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#navigation-buttons button:hover {
+    background-color: #444;
+}
+
+/* Bouton unique en bas centré */
+#single-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#single-button button {
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 8px 16px; /* Ajuster le padding */
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: auto;
+}
+
+#single-button button:hover {
+    background-color: #444;
+}
+
+/* Sections */
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Texte dans les sections */
+.text-container {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 30px;
+    color: orange;
+}
+
+.subtitle {
+    font-size: 22px;
+}
+
+/* Image dans les sections */
+.image-container, .images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap; /* Permettre de passer à la ligne suivante */
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* Deux contacts par ligne */
+    margin-bottom: 20px; /* Espacement entre les lignes */
+}
+
+.contact-item img {
+    width: 30px;
+    height: auto;
+}
+
+.contact-item p {
+    margin-top: 5px;
+}
+
+/* Calculette panneau solaire */
+#solar-calculator {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#solar-calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#solar-calculator input,
+#solar-calculator select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#solar-calculator button {
+    background-color: orange;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px; /* Boutons plus petits sur mobile */
+    margin-top: 20px;
+    align-self: center; /* Centré */
+}
+
+#solar-calculator button:hover {
+    background-color: #e68a00;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Sections de texte et images */
+section p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+section img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

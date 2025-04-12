@@ -50,6 +50,17 @@
       opacity: 0;
       transition: opacity 1s ease-in;
     }
+
+    /* Optimisation pour les petits écrans */
+    @media screen and (max-width: 768px) {
+      #logo {
+        width: 120px;
+        height: 120px;
+      }
+      #title {
+        font-size: 1.8em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -82,3 +93,4 @@
   </script>
 </body>
 </html>
+

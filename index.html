@@ -371,36 +371,7 @@
             transform: translateY(-2px);
         }
 
-        /* ===== SERVICES NAV ===== */
-        .services-nav {
-            padding: 20px 5%;
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
-            background: var(--dark2);
-            border-top: 1px solid rgba(255,255,255,0.05);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
 
-        .services-nav a {
-            color: var(--gray);
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 8px 18px;
-            border-radius: 100px;
-            border: 1px solid rgba(255,255,255,0.08);
-            transition: all 0.2s;
-        }
-
-        .services-nav a:hover, .services-nav a.solar {
-            color: var(--orange);
-            border-color: var(--orange);
-            background: rgba(255,107,0,0.06);
-        }
 
         /* ===== SECTIONS ===== */
         .section {
@@ -855,16 +826,7 @@
         </div>
     </section>
 
-    <!-- SERVICES QUICK NAV -->
-    <div class="services-nav">
-        <a href="#chauffage">🔥 Chauffage</a>
-        <a href="#adoucisseur">💧 Adoucisseur</a>
-        <a href="#electricite">⚡ Électricité</a>
-        <a href="#ventilation">🌬️ Ventilation</a>
-        <a href="#climatisation">❄️ Climatisation</a>
-        <a href="#maintenance">🔧 Maintenance</a>
-        <a href="#panneaux-solaires" class="solar">☀️ Panneaux Solaires</a>
-    </div>
+
 
     <!-- CHAUFFAGE -->
     <section id="chauffage">
@@ -1074,7 +1036,7 @@
                     <img src="https://img.freepik.com/premium-vector/phone-call-icon-vector-illustration-design-telephone_373520-4523.jpg?w=200" alt="Téléphone">
                     <span>0486 80 44 07</span>
                 </a>
-                <a href="mailto:bienfaitenergies@gmail.com" class="contact-card">
+                <a href="/cdn-cgi/l/email-protection#4b29222e252d2a223f2e252e392c222e380b2c262a222765282426" class="contact-card">
                     <img src="https://logos-download.com/wp-content/uploads/2016/05/Gmail_logo_icon-700x531.png" alt="Email">
                     <span>Email</span>
                 </a>
@@ -1098,7 +1060,7 @@
 
 </div><!-- end main-content -->
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Mobile menu
     function toggleMenu() {
         document.getElementById('mobile-menu').classList.toggle('open');
@@ -1148,11 +1110,4 @@
         document.getElementById('res-co2').textContent = co2.toFixed(2) + ' kg';
         document.getElementById('res-kwh').textContent = kwh.toFixed(2) + ' kWh';
 
-        const result = document.getElementById('calc-result');
-        result.classList.add('show');
-        result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-</script>
-
-</body>
-</html>
+        const result = document.getElementById('ca
